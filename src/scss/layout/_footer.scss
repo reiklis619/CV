@@ -1,0 +1,12 @@
+footer {
+    background-image: url("../../../build/img/mountain-6538890_1920.webp");
+    @include tablet {
+        display: grid;
+        grid-template-columns: 60% auto;
+    }
+    .nav {
+        @include grid (4, .5rem);
+        list-style: none;
+    }
+    margin-bottom: -16px;
+}

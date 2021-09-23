@@ -1,0 +1,37 @@
+.perfil-image {
+    background-image: url("../../../build/img/mountain-6538890_1920.webp");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.perfil-text {
+    text-align: center;
+    @include tablet {
+        display: grid;
+        grid-template-columns: 60% auto;
+
+    .nav {
+        @include grid (4, 0.5rem);
+    }
+    }
+
+    .nav {
+        list-style: none;
+        padding-left: 0;
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.blog {
+    color: $negro;
+    @include tablet {
+        text-align: start;
+    }
+    
+    font-weight: $bold;
+}

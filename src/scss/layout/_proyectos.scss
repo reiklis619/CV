@@ -1,0 +1,29 @@
+.proyectos {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+
+    h2 {
+        color: $negro;
+    }
+}
+.general {
+    @include tablet {
+        @include grid (3, 1rem);
+    }
+    @include grid(2, 1rem);
+    .proy {
+        width: 95%;
+        height: 350px;
+        background: -moz-linear-gradient(-45deg, rgba(224,68,44,1) 0%, rgba(125,185,232,0.51) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(224,68,44,1) 0%,rgba(125,185,232,0.51) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(224,68,44,1) 0%,rgba(125,185,232,0.51) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0442c', endColorstr='#827db9e8',GradientType=1 );
+        border-radius: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+        
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <header class="perfil-image">
+        <div class="perfil-text">
+            <h2 class="blog">BlogPersonal</h2>
+
+            <ul class="nav">
+                <li>sobre mi</li>
+                <li>proyectos</li>
+                <li>contacto</li>
+                <li>redes</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="presentation">
+        <img class="perfil" src="./build/img/IMG_20210922_130559.jpg" alt="./build/img/IMG_20210922_130559.webp">
+        <h2>Reinier Vargas Arenas</h2>
+        <h3>programador de frontEnd, Medellin COL</h3>
+        <p><span>coding and learning </span>all time</p>
+    </div>
+    <div class="space"></div>
+
+    <div class="proyectos">
+        <h2>proyectos</h2>
+        <div class="general">
+        <div class="proyect-uno proy">
+            <h3>app salon</h3>
+            <img src="" alt="">
+            <button>ver pagina</button>
+            <button>ver codigo</button>
+        </div>
+        <div class="proyect-dos proy"></div>
+        <div class="proyect-tres proy"></div>
+        <div class="proyect-cuatro proy"></div>
+        <div class="proyect-cinco proy"></div>
+    </div>
+    </div>
+
+    <div class="redes">
+        <h2> Redes Sociales</h2>
+        <img src="build/img/gorjeo.png" alt="build/img/gorjeo.webp">
+        <img src="build/img/instagram.png" alt="build/img/instagram.webp">
+        <img src="build/img/linkedin.png" alt="build/img/linkedin.webp">
+        <img src="build/img/whatsapp.png" alt="build/img/whatsapp.webp">
+        <img src="build/img/facebook.png" alt="build/img/facebook.webp">
+    </div>
+
+    <div class="contact_form">
+
+        <div class="formulario">      
+          <h1>Formulario de contacto</h1>
+              <form action="submeter-formulario.php" method="post">       
+        
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                  
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>      
+                  
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                  
+                    <p>
+                      <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                      </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                    </p>                    
+                  
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+              </form>
+        </div>  
+      </div>
+    <footer>
+        <h2 class="blog">BlogPersonal</h2>
+
+            <ul class="nav">
+                <li>sobre mi</li>
+                <li>proyectos</li>
+                <li>contacto</li>
+                <li>redes</li>
+            </ul>
+    </footer>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+</html>
